@@ -7,5 +7,4 @@ class empresa:
         self.razon_social=razon_social
         self.lista_depto=[]
 
-    def
 
