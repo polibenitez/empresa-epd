@@ -1,10 +1,10 @@
 __author__ = 'usuarioupo'
 
 class Departamento:
-    def __init__(self,nombre_depto,id_depto):
-        self.nombre_depto=nombre_depto
-        self.id_depto=id_depto
-        self.lista_emp=[]
+    def __init__(self, nombre_depto, id_depto):
+        self.nombre_depto = nombre_depto
+        self.id_depto = id_depto
+        self.lista_emp = []
 
     def aniadir_emp(self,Empleado):
         self.lista_emp.append(Empleado)

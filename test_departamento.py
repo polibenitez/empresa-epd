@@ -7,36 +7,36 @@ __author__ = 'usuarioupo'
 
 class TestDepartamento(TestCase):
     def test_get_salario_total(self):
-        empleado1=mock()
+        empleado1 = mock()
         when(empleado1).getSalario().thenReturn(200)
 
-        empleado2=mock()
+        empleado2 = mock()
         when(empleado2).getSalario().thenReturn(100)
 
-        empleado3=mock()
+        empleado3 = mock()
         when(empleado3).getSalario().thenReturn(300)
 
-        departamento = Departamento('hp',2)
+        departamento = Departamento('hp', 2)
         departamento.aniadir_emp(empleado1)
         departamento.aniadir_emp(empleado2)
         departamento.aniadir_emp(empleado3)
 
-        self.assertEqual(departamento.get_salario_total(),600)
+        self.assertEqual(departamento.get_salario_total(), 600)
 
     def test_get_salario_total_mensual(self):
-        empleado1=mock()
+        empleado1 = mock()
         when(empleado1).get_salario_mensual().thenReturn(40)
 
-        empleado2=mock()
+        empleado2 = mock()
         when(empleado2).get_salario_mensual().thenReturn(30)
 
-        empleado3=mock()
+        empleado3 = mock()
         when(empleado3).get_salario_mensual().thenReturn(50)
 
 
-        departamento = Departamento('hp',2)
+        departamento = Departamento('hp', 2)
         departamento.aniadir_emp(empleado1)
         departamento.aniadir_emp(empleado2)
         departamento.aniadir_emp(empleado3)
 
-        self.assertEqual(departamento.get_salario_total_mensual(),120)
+        self.assertEqual(departamento.get_salario_total_mensual(), 120)

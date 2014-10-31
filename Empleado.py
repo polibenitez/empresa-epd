@@ -1,14 +1,14 @@
 __author__ = 'usuarioupo'
 
 class Empleado:
-    def __init__(self,nombre,apellidos,dni,direccion,edad,salario,email):
-        self.nombre=nombre
-        self.apellidos=apellidos
-        self.dni=dni
-        self.direccion=direccion
-        self.edad=edad
-        self.salario
-        self.email=email
+    def __init__(self, nombre, apellidos, dni, direccion, edad, salario, email):
+        self.nombre = nombre
+        self.apellidos = apellidos
+        self.dni = dni
+        self.direccion = direccion
+        self.edad = edad
+        self.salario = salario
+        self.email = email
 
     def getSalario(self):
         return self.salario
