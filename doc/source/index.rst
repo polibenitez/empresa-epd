@@ -16,10 +16,6 @@ Contents:
    empresa
    test_departamento
 
-.. automodule:: Departamento
-   :members:
-   :undoc-members:
-   :special-members:
 
 Indices and tables
 ==================
